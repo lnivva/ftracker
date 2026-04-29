@@ -1,0 +1,18 @@
+[package]
+name = "ftracker-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ft"
+path = "src/main.rs"
+
+[dependencies]
+ftracker-core = { path = "../ftracker-core" }
+ftracker-infra = { path = "../ftracker-infra" }
+clap = { version = "4", features = ["derive", "env"] }
+thiserror = { workspace = true }
+chrono = { workspace = true }
+rust_decimal = { workspace = true }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

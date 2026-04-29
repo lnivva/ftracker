@@ -1,0 +1,12 @@
+[package]
+name = "ftracker-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = { workspace = true }
+chrono = { workspace = true }
+rust_decimal = { workspace = true }
+
+[dev-dependencies]
+rust_decimal_macros = "1"

@@ -1,0 +1,9 @@
+[package]
+name = "ftracker-infra"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ftracker-core = { path = "../ftracker-core" }
+chrono = { workspace = true }
+rust_decimal = { workspace = true }
